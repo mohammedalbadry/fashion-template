@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello, world!</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+  </head>
+  <body>
+
+    <div class="super_container">
+
+      <header>
+
+        <!--top bar-->
+        <div class="bg-1 top_border">
+          <div class="container">
+            <div class="top_bar d-none d-sm-flex justify-content-between align-items-center ">
+
+              <ul class="contact_info d-flex justify-content-start">
+
+                <div class="item c-1 p-2">
+                  <span class="icon p-1"><i class="fas fa-phone-alt"></i></span>
+                  <span class="data">01234567899</span>
+                </div>
+              
+                <div class="item c-1 p-2">
+                  <span class="icon p-1"><i class="fas fa-envelope"></i></span>
+                  <span class="data">email.info@test.com</span>
+                </div>
+
+              </ul>
+              <ul class="social_info d-flex justify-content-start">
+                <li class="c-1 p-1"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="c-1 p-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="c-1 p-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="c-1 p-1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav mb-3 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="index.html">home</a></li>
+                    <li><a class="dropdown-item" href="single.html">single product</a></li>
+                    <li><a class="dropdown-item" href="cart.html">cart</a></li>
+                    <li><a class="dropdown-item" href="checkout.html">checkout</a></li>
+                    <li><a class="dropdown-item" href="wishlist.html">wishlistt</a></li>
+                    <li><a class="dropdown-item" href="full-grid.html">full grid</a></li>
+                    <li><a class="dropdown-item" href="list-full.html">full list</a></li>
+                    <li><a class="dropdown-item" href="left-sidbar.html">left slidbar</a></li>
+                    <li><a class="dropdown-item" href="list-sidbar.html">slidbar list</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="actions">
+
+              <ul class="d-flex">
+                <li class="cart p-2">
+
+                  <div class="dropdown">
+                    <div class="cart_icon pointer" id="cart" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                      <span class="cart_badge">2</span>
+                    </div>
+                    <div class="dropdown-menu cart_dropdown" aria-labelledby="cart">
+
+                      <div class="cart_item">
+                        <div class="img">
+                          <img src="img/product/p1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <h4 class="title">product title</h4>
+                          <p class="price">$12.999</p>
+                        </div>
+                      </div>
+
+                      <div class="cart_item">
+                        <div class="img">
+                          <img src="img/product/p11.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <h4 class="title">product title</h4>
+                          <p class="price">$12.999</p>
+                        </div>
+                      </div>
+
+                      <div class="cart_item">
+                        <div class="img">
+                          <img src="img/product/p12.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <h4 class="title">product title</h4>
+                          <p class="price">$12.999</p>
+                        </div>
+                      </div>
+
+                      <a class="checkout_btn btn my_btn" href="">checkout</a>
+
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="search p-2">
+
+                  <div class="dropdown">
+                    <div class="pointer" id="search" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="icon"><i class="fas fa-search"></i></span>
+                    </div>
+                    <div class="dropdown-menu search_dropdown" aria-labelledby="search">
+                      <form action="">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="user p-2">
+
+                  <div class="dropdown">
+                    <div class="pointer" id="user" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="icon"><i class="fas fa-user"></i></span>
+                    </div>
+                    <div class="dropdown-menu user_dropdown" aria-labelledby="user">
+                      <ul>
+                        <li class="info">
+                          <div class="img">
+                            <img src="img/user.png" alt="">
+                          </div>
+                          <h3 class="name">john doe</h3>
+                        </li>
+                        <li class="profile"><a class="btn" href="">profile</a></li>
+                        <li class="setting"><a class="btn" href="">setting</a></li>
+                        <li class="logout"><a class="btn" href="">logout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+        
+      </header>
+
+      <section class="cart_section">
+        <div class="container">
+
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Page</a></li>
+              <li class="breadcrumb-item active" aria-current="page">product name</li>
+            </ol>
+          </nav>
+
+
+          <div class="row pt-3">
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p1.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="product">
+                  <div class="img">
+                    <img src="img/product/p2.jpg" alt="">
+                    <div class="overlay">
+                      <ul>
+                        <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                        <li class="icon"><i class="fas fa-heart"></i></li>
+                        <li class="icon"><i class="fas fa-eye"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h5><a href="">product title</a></h5>
+                    <p>$12.333</p>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="product">
+                  <div class="img">
+                    <img src="img/product/p3.jpg" alt="">
+                    <div class="overlay">
+                      <ul>
+                        <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                        <li class="icon"><i class="fas fa-heart"></i></li>
+                        <li class="icon"><i class="fas fa-eye"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h5><a href="">product title</a></h5>
+                    <p>$12.333</p>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="product">
+                  <div class="img">
+                    <img src="img/product/p4.jpg" alt="">
+                    <div class="overlay">
+                      <ul>
+                        <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                        <li class="icon"><i class="fas fa-heart"></i></li>
+                        <li class="icon"><i class="fas fa-eye"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h5><a href="">product title</a></h5>
+                    <p>$12.333</p>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="product">
+                  <div class="img">
+                    <img src="img/product/p5.jpg" alt="">
+                    <div class="overlay">
+                      <ul>
+                        <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                        <li class="icon"><i class="fas fa-heart"></i></li>
+                        <li class="icon"><i class="fas fa-eye"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <h5><a href="">product title</a></h5>
+                    <p>$12.333</p>
+                    <div class="rate">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p6.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p7.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p8.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p9.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p10.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p11.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="product">
+                <div class="img">
+                  <img src="img/product/p12.jpg" alt="">
+                  <div class="overlay">
+                    <ul>
+                      <li class="icon"><i class="fas fa-shopping-cart"></i></li>
+                      <li class="icon"><i class="fas fa-heart"></i></li>
+                      <li class="icon"><i class="fas fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="">product title</a></h5>
+                  <p>$12.333</p>
+                  <div class="rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+ 
+
+    
+        </div>
+      </section>
+
+
+
+      <footer>
+        <div class="m_section m_footer">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="information">
+                  <h3>information</h3>
+                  <ul>
+                    <li>delivery information</li>
+                    <li>discount</li>
+                    <li>sitemap</li>
+                    <li>privacy policy</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="help">
+                  <h3>help</h3>
+                  <ul>
+                    <li>F.A.Q.</li>
+                    <li>shipping</li>
+                    <li>contact us</li>
+                    <li>privacy policy</li>
+                  </ul>
+                </div>
+              </div>
+
+              
+              <div class="col-md-4">
+                <div class="contact">
+                  <h3>contact info</h3>
+                  <ul>
+                    <li><i class="fas fa-phone-alt"></i> 01234567899</li>
+                    <li><i class="fas fa-map-marker-alt"></i> egypt in north africa</li>
+                    <li><i class="fas fa-envelope"></i> email@domin.com</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="content d-flex justify-content-between align-items-center">
+              <p>all copyrights reserved &#xA9</p>
+
+              <p>designed by <a href="">my name</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--
+    <script src="js/owl.carousel.min.js"></script>
+    -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
